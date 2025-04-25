@@ -123,7 +123,7 @@ Rent-App-Vue
 
 ## 📸 Preview
 
-![Full Screen Screenshot](public\images\full-screen.png.png)
+![Full Screen Screenshot](public/images/full-screen.png)
 
 ---
 
