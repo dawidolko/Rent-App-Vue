@@ -2,7 +2,7 @@
 
 > **Case:** Build a responsive and modern web application for showcasing rental properties. The application includes a homepage with a header, slider, apartment filter, project listings, about section, and a mobile menu. Animations and hover effects have been added to improve UX. The design was provided beforehand.
 
-> **Tech Stack:** `Vue 3`, `JavaScript`, `SCSS`, `Vite`.
+> **Tech Stack:** `Vue 3`, `JavaScript`, `SCSS`, `Vite`, `git`.
 
 ## 🚀 Usage
 
