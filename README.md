@@ -31,22 +31,26 @@ Rent-App-Vue/
 ## 🚀 Getting Started
 
 ### 1. Clone the Repository
+
 ```bash
 git clone https://github.com/dawidolko/Rent-App-Vue.git
 cd Rent-App-Vue
 ```
 
 ### 2. Install Dependencies
+
 ```bash
 npm install
 ```
 
 ### 3. Start Development Server
+
 ```bash
 npm run dev
 ```
 
 ### 4. Additional Commands
+
 ```bash
 # Check for linting issues
 npm run lint
@@ -61,17 +65,20 @@ npm run preview
 ## ⚙️ System Requirements
 
 ### **Essential Tools:**
+
 - **Node.js** (latest LTS version recommended)
 - **npm** or **yarn** package manager
 - **Modern Web Browser** (Chrome, Firefox, Safari, Edge)
 - **Git** for version control
 
 ### **Development Environment:**
+
 - **Code Editor** (VS Code, WebStorm, Sublime Text)
 - **Vue.js DevTools** browser extension
 - **Vite** development server (included)
 
 ### **Recommended Extensions:**
+
 - **Vue.js** syntax highlighting (Vetur or Volar)
 - **Sass/SCSS** support
 - **Prettier** for code formatting
@@ -79,38 +86,45 @@ npm run preview
 - **Auto Rename Tag** for Vue template editing
 
 ### **Vue.js Ecosystem:**
+
 - **Vue 3** (Composition API)
 - **Vite** for fast build tooling
 - **SCSS/Sass** for styling
 - **JavaScript (ES6+)** for logic
 
 ### **Optional Tools:**
+
 - **Docker** for containerized deployment
 - **GitHub Pages** for hosting
 
 ## ✨ Key Features
 
 ### **🏠 Property Showcase**
+
 - Comprehensive rental property listings with detailed information
 - Interactive property slider with smooth transitions
 - Advanced apartment filtering system by price, location, and features
 
 ### **📱 Responsive Design**
+
 - Fully optimized for mobile, tablet, and desktop devices
 - Mobile-first approach with collapsible navigation menu
 - Modern Vue.js responsive patterns
 
 ### **⚡ Interactive User Experience**
+
 - Smooth animations and hover effects throughout the application
 - Dynamic filtering and search functionality
 - Intuitive navigation with mobile-optimized menu
 
 ### **🎨 Modern UI/UX**
+
 - Component-based Vue.js architecture for maintainability
 - Modular SCSS styling with organized file structure
 - Professional design following provided specifications
 
 ### **🚀 Performance Optimized**
+
 - Vite build system for fast development and production builds
 - Optimized assets and efficient bundle splitting
 - Smooth animations and transitions
@@ -140,11 +154,13 @@ Open `http://localhost:8080` in your browser.
 To deploy on GitHub Pages:
 
 1. Install gh-pages package:
+
 ```bash
 npm install gh-pages --save-dev
 ```
 
 2. Add deploy script to `package.json`:
+
 ```json
 "scripts": {
   "deploy": "npm run build && gh-pages -d dist"
@@ -152,6 +168,7 @@ npm install gh-pages --save-dev
 ```
 
 3. Deploy your project:
+
 ```bash
 npm run deploy
 ```
@@ -180,5 +197,3 @@ Created by **[Dawid Olko](https://github.com/dawidolko)** - Feel free to connect
 This project is open source and available under the [MIT License](LICENSE).
 
 ---
-
-⭐ **Found this helpful?** Give it a star and share with fellow Vue.js developers!
