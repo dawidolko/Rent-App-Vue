@@ -1,4 +1,4 @@
-# Rent-App-Vue
+# Rent-App-Vue 
 
 > 🚀 **Modern Rental Property Platform with Vue.js** - Build responsive web applications for showcasing rental properties with advanced filtering
 
