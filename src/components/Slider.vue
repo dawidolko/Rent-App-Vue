@@ -22,7 +22,7 @@
     <div class="slider__content">
       <img
         class="slider__content__title"
-        src="../assets/title.png"
+        src="../assets/title.webp"
         alt="Русич Котельники"
         width="380"
         height="68"
@@ -89,7 +89,7 @@ export default {
     },
     changePagination() {
       let elements = document.getElementsByClassName(
-        "slider__pagination__element"
+        "slider__pagination__element",
       );
 
       for (let i = 0; i < elements.length; i++) {

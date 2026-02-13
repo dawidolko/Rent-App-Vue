@@ -16,7 +16,7 @@ defineProps({
     <div id="side-menu" class="side-menu" :style="{ transform: translateMenu }">
       <div class="side-menu__header">
         <div>
-          <img class="side-menu__header__logo" src="./../../assets/logo.png" />
+          <img class="side-menu__header__logo" src="./../../assets/logo.webp" />
           <div class="side-menu__header__component">
             <img
               src="./../icons/phone.svg"
@@ -62,7 +62,7 @@ defineProps({
       <div class="side-menu__content">
         <nav
           class="side-menu__content__column"
-          style="grid: 'A'; grid-row-start: 1; grid-row-end: 3"
+          style="grid: &quot;A&quot;; grid-row-start: 1; grid-row-end: 3"
         >
           <a href="#">Projects</a>
           <a href="#">Apartments</a>
@@ -71,7 +71,7 @@ defineProps({
           <a href="#">Contacts</a>
         </nav>
         <div class="side-menu__content__column__container">
-          <div class="side-menu__content__column" style="grid: 'B'">
+          <div class="side-menu__content__column" style="grid: &quot;B&quot;">
             <h5>Purchase</h5>
             <a href="#">Trade-in</a>
             <a href="#">Installment</a>
@@ -83,7 +83,7 @@ defineProps({
             <a href="#">Apartment as Investment</a>
             <a href="#">FAQ</a>
           </div>
-          <div class="side-menu__content__column" style="grid: 'D'">
+          <div class="side-menu__content__column" style="grid: &quot;D&quot;">
             <h5>Spaces</h5>
             <a href="#">Parking Spaces</a>
             <a href="#">Storage Rooms</a>
@@ -92,7 +92,7 @@ defineProps({
           </div>
         </div>
         <div class="side-menu__content__column__container">
-          <div class="side-menu__content__column" style="grid: 'C'">
+          <div class="side-menu__content__column" style="grid: &quot;C&quot;">
             <h5>For Residents</h5>
             <a href="#">Key Handover</a>
             <a href="#">Refinancing</a>
@@ -101,7 +101,7 @@ defineProps({
             <a href="#">Project Documents</a>
             <a href="#">Apartment Rentals</a>
           </div>
-          <div class="side-menu__content__column" style="grid: 'E'">
+          <div class="side-menu__content__column" style="grid: &quot;E&quot;">
             <h5>Other</h5>
             <a href="#">Promotions</a>
             <a href="#">News</a>

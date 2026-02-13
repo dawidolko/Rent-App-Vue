@@ -175,7 +175,7 @@ npm run deploy
 
 ## 🖼️ Preview
 
-![Full Screen Screenshot](public/images/full-screen.png)
+![Full Screen Screenshot](public/images/full-screen.webp)
 
 ## 🤝 Contributing
 

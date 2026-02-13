@@ -1,7 +1,7 @@
 <template>
   <SideMenu v-if="opened" :close-menu="closeMenu" />
   <header class="header compact">
-    <img class="header__logo" src="../assets/logo.png" />
+    <img class="header__logo" src="../assets/logo.webp" />
     <a href="#" class="header__notification">Mortgage 6.2%</a>
     <div class="header__projects">
       <a href="#">Projects</a>
