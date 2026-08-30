@@ -7,6 +7,7 @@
     <div class="slider__controller">
       <button
         class="slider__controller__button slider__controller__button--outlined"
+        aria-label="Poprzedni slajd"
         @click="prevPage()"
       >
         <i></i>
@@ -14,6 +15,7 @@
       <p class="slider__controller__pagination">{{ page }} / 5</p>
       <button
         class="slider__controller__button right slider__controller__button--outlined"
+        aria-label="Następny slajd"
         @click="nextPage()"
       >
         <i></i>

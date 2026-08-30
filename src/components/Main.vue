@@ -6,7 +6,7 @@ import About from "./About.vue";
 </script>
 
 <template>
-  <main>
+  <main id="main-content" tabindex="-1">
     <Slider />
     <Filter />
     <Projects />

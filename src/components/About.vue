@@ -44,7 +44,7 @@
             />
           </div>
           <div class="video-container">
-            <a class="video-container__box" href="#">
+            <a class="video-container__box" href="#" aria-label="Odtwórz wideo o inwestycji">
               <div class="video-container__box__play"></div>
             </a>
             <span class="video-container__description subtitle">

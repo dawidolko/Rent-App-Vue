@@ -47,9 +47,11 @@ defineProps({
           <p class="card__content__description__metro subtitle">
             {{ metro }}
           </p>
+          <!-- Decorative: the adjacent text already says the travel time. -->
           <img
             class="card__content__description__image"
             src="../icons/car.svg"
+            alt=""
           />
           <p class="card__content__description__time subtitle">
             {{ time }} min
