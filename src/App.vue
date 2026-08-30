@@ -8,12 +8,12 @@ import Main from "./components/Main.vue";
     First focusable element: lets a keyboard user skip the header and land on
     the listings. The target id is on <main> inside Main.vue.
   -->
-  <a class="skip-link" href="#main-content">Przejdź do treści</a>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
   <Header />
   <Main />
   <footer class="site-footer">
     <p>
-      Rent App — projekt demonstracyjny. Autor:
+      Rent App — a demonstration project by
       <a href="https://dawidolko.pl" rel="noopener noreferrer" target="_blank">Dawid Olko</a>.
     </p>
   </footer>

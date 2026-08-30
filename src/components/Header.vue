@@ -1,22 +1,22 @@
 <template>
   <SideMenu v-if="opened" :close-menu="closeMenu" />
   <header class="header compact">
-    <h1 class="visually-hidden">Rent App — wynajem mieszkań i apartamentów</h1>
+    <h1 class="visually-hidden">Rent App — apartment and flat rentals</h1>
     <img class="header__logo" src="../assets/logo.webp" alt="Rent App" />
     <a href="#" class="header__notification">Mortgage 6.2%</a>
     <div class="header__projects">
       <a href="#">Projects</a>
-      <button class="header__projects__button" aria-label="Rozwiń listę projektów"></button>
+      <button class="header__projects__button" aria-label="Show the project list"></button>
       <a href="#">Apartments</a>
     </div>
     <div class="header__menu">
       <a href="tel:+48 696 501 890" class="header__menu__phone"
         >+48 696 501 890</a
       >
-      <button class="header__menu__button header__menu__button--outlined" aria-label="Ulubione">
+      <button class="header__menu__button header__menu__button--outlined" aria-label="Favourites">
         <img src="./icons/like.svg" alt="Like" />
       </button>
-      <button class="header__menu__button" aria-label="Otwórz menu" @click="openMenu()">
+      <button class="header__menu__button" aria-label="Open menu" @click="openMenu()">
         <img src="./icons/menu.svg" alt="Menu" />
       </button>
     </div>
