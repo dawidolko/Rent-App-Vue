@@ -1,199 +1,99 @@
-# Rent-App-Vue
+# Rent App
 
-> 🚀 **Modern Rental Property Platform with Vue.js** - Build responsive web applications for showcasing rental properties with advanced filtering
+> 🏢 **Filters that show their work** — a Vue 3 flat-finder where every active criterion stays visible as a removable chip
 
-## 📋 Description
+**Rent App** is the search page of a property developer's site: a list of flats with a filter panel above it. Floor, area and price are range sliders; project, finishing standard and completion deadline are dropdowns. Whatever is active appears as a labelled chip with its own clear button, so the list never quietly hides results behind a filter you forgot you set.
 
-Welcome to the **Rent-App-Vue** repository! This project showcases a responsive and modern web application for showcasing rental properties built with Vue.js and Vite. The application features a comprehensive homepage with header, slider, apartment filtering system, project listings, about section, and mobile menu with smooth animations and hover effects for enhanced user experience.
+It is a static Vue 3 build published to GitHub Pages — no backend, the flats come from the component's own data.
 
-This repository demonstrates best practices in Vue.js development, component-based architecture, and modern build tools for real estate and property rental platforms.
+![Vue.js](https://img.shields.io/badge/Vue.js-3-4FC08D?logo=vuedotjs&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-build-646CFF?logo=vite&logoColor=white)
+![noUiSlider](https://img.shields.io/badge/noUiSlider-15-0E9BE0)
+![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-deployed-222222?logo=githubpages&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-## 📁 Repository Structure
+**Live:** [rent.dawidolko.pl](https://rent.dawidolko.pl)
 
-```
-Rent-App-Vue/
-├── 📁 dist/             # Production build output
-│   └── 🎨 assets/       # Compiled JS/CSS assets
-├── 📁 public/           # Static public files
-│   └── 🖼️ images/       # Public images and media
-└── 📁 src/              # Source files
-    ├── 🎨 assets/
-    │   ├── 🔤 fonts/     # Custom fonts
-    │   ├── 🎨 scss/      # SCSS styling files
-    │   └── ...
-    ├── ⚛️ components/    # Reusable Vue components
-    │   ├── 🔧 icons/     # SVG icons
-    │   ├── 📋 subforms/  # Sub-components
-    ├── 💻 App.vue        # Main application component
-    └── 🚀 main.js        # Application entry point
-```
+---
+
+## 🎯 Key Features
+
+- **Active filters are visible and individually clearable** — each criterion renders as a chip with its own ✕, and a counter on the mobile button says how many are on. Clearing one does not reset the rest.
+- **Three range sliders, not six number fields** — floor (1–16), area (24–160 m²) and price are `@vueform/slider` ranges, which is the control the values actually call for.
+- **A panel that expands** — the common filters are always visible; the rest sit behind an "extended" toggle, so the page does not open with a wall of controls.
+- **Flats as cards** — `FlatCard` renders one result, so the list, the comparison and any future view share the same presentation.
+- **An icon set as files, not a font** — SVGs in `src/components/icons`, imported where needed, so nothing loads a whole icon font for six glyphs.
+- **Responsive layout** — the filter panel becomes a sheet on a phone; the flat list drops from a grid to a single column.
+
+---
+
+## 🛠️ Technology Stack
+
+| Technology          | Version | Role                                                     |
+| ------------------- | ------- | -------------------------------------------------------- |
+| **Vue.js**          | 3.2     | Options API single-file components.                      |
+| **Vite**            | —       | Dev server and build.                                    |
+| **@vueform/slider** | 2.1     | The floor, area and price ranges.                        |
+| **noUiSlider**      | 15.6    | Range slider engine behind the controls.                 |
+| **vue-select**      | 4 beta  | The dropdown criteria.                                   |
+| **gh-pages**        | —       | Publishing `dist/` to GitHub Pages.                      |
+
+---
 
 ## 🚀 Getting Started
 
-### 1. Clone the Repository
+### Prerequisites
+
+- Node.js 18 or newer
+- npm
+
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/dawidolko/Rent-App-Vue.git
 cd Rent-App-Vue
 ```
 
-### 2. Install Dependencies
+### 2. Install dependencies
 
 ```bash
 npm install
 ```
 
-### 3. Start Development Server
+### 3. Run
 
 ```bash
-npm run dev
+npm run dev       # development server
+npm run build     # production build into dist/
+npm run preview   # serve the build on :4173
+npm run lint      # ESLint over .vue and .js
+npm run deploy    # build and publish to GitHub Pages
 ```
 
-### 4. Additional Commands
+---
 
-```bash
-# Check for linting issues
-npm run lint
+## 📁 Project Structure
 
-# Build for production
-npm run build
-
-# Preview production build
-npm run preview
+```
+Rent-App-Vue/
+├── public/                      # static files and CNAME
+└── src/
+    ├── App.vue                  # page composition
+    ├── main.js                  # app bootstrap
+    ├── components/
+    │   ├── Header.vue           # navigation
+    │   ├── Main.vue             # opening section
+    │   ├── Filter.vue           # sliders, dropdowns, active-filter chips
+    │   ├── Projects.vue         # project listing
+    │   ├── Slider.vue           # gallery
+    │   ├── About.vue
+    │   ├── subforms/FlatCard.vue # one result
+    │   └── icons/               # SVG icon set
+    └── assets/
 ```
 
-## ⚙️ System Requirements
-
-### **Essential Tools:**
-
-- **Node.js** (latest LTS version recommended)
-- **npm** or **yarn** package manager
-- **Modern Web Browser** (Chrome, Firefox, Safari, Edge)
-- **Git** for version control
-
-### **Development Environment:**
-
-- **Code Editor** (VS Code, WebStorm, Sublime Text)
-- **Vue.js DevTools** browser extension
-- **Vite** development server (included)
-
-### **Recommended Extensions:**
-
-- **Vue.js** syntax highlighting (Vetur or Volar)
-- **Sass/SCSS** support
-- **Prettier** for code formatting
-- **ESLint** for code quality
-- **Auto Rename Tag** for Vue template editing
-
-### **Vue.js Ecosystem:**
-
-- **Vue 3** (Composition API)
-- **Vite** for fast build tooling
-- **SCSS/Sass** for styling
-- **JavaScript (ES6+)** for logic
-
-### **Optional Tools:**
-
-- **Docker** for containerized deployment
-- **GitHub Pages** for hosting
-
-## ✨ Key Features
-
-### **🏠 Property Showcase**
-
-- Comprehensive rental property listings with detailed information
-- Interactive property slider with smooth transitions
-- Advanced apartment filtering system by price, location, and features
-
-### **📱 Responsive Design**
-
-- Fully optimized for mobile, tablet, and desktop devices
-- Mobile-first approach with collapsible navigation menu
-- Modern Vue.js responsive patterns
-
-### **⚡ Interactive User Experience**
-
-- Smooth animations and hover effects throughout the application
-- Dynamic filtering and search functionality
-- Intuitive navigation with mobile-optimized menu
-
-### **🎨 Modern UI/UX**
-
-- Component-based Vue.js architecture for maintainability
-- Modular SCSS styling with organized file structure
-- Professional design following provided specifications
-
-### **🚀 Performance Optimized**
-
-- Vite build system for fast development and production builds
-- Optimized assets and efficient bundle splitting
-- Smooth animations and transitions
-
-## 🛠️ Technologies Used
-
-- **Vue 3** - Progressive JavaScript framework
-- **JavaScript (ES6+)** - Modern JavaScript features
-- **SCSS/Sass** - Advanced CSS preprocessing
-- **Vite** - Next-generation frontend build tool
-- **Git** - Version control and collaboration
-
-## 🐳 Docker Deployment (Optional)
-
-For containerized deployment:
-
-```bash
-# Install Docker: https://www.docker.com/products/docker-desktop
-docker build -t rent-app-vue .
-docker run -p 8080:80 rent-app-vue
-```
-
-Open `http://localhost:8080` in your browser.
-
-## 🌍 GitHub Pages Deployment
-
-To deploy on GitHub Pages:
-
-1. Install gh-pages package:
-
-```bash
-npm install gh-pages --save-dev
-```
-
-2. Add deploy script to `package.json`:
-
-```json
-"scripts": {
-  "deploy": "npm run build && gh-pages -d dist"
-}
-```
-
-3. Deploy your project:
-
-```bash
-npm run deploy
-```
-
-## 🖼️ Preview
-
-![Full Screen Screenshot](public/images/full-screen.webp)
-
-## 🤝 Contributing
-
-Contributions are highly welcomed! Here's how you can help:
-
-- 🐛 **Report bugs** - Found an issue? Let us know!
-- 💡 **Suggest improvements** - Have ideas for better features?
-- 🔧 **Submit pull requests** - Share your enhancements and solutions
-- 📖 **Improve documentation** - Help make the project clearer
-
-Feel free to open issues or reach out through GitHub for any questions or suggestions.
-
-## 👨‍💻 Author
-
-Created by **[Dawid Olko](https://github.com/dawidolko)** - Feel free to connect with me!
+---
 
 ## 📄 License
 
-This project is open source and available under the [MIT License](LICENSE).
-
----
+MIT © [Dawid Olko](https://dawidolko.pl)
