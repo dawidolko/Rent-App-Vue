@@ -1,0 +1,11 @@
+# Rent App
+
+> Rent App is a demonstration apartment rental website built with Vue.js by Dawid Olko. It has one page with a project slider, an apartment filter, project cards and a section about the developer group.
+
+## Pages
+
+- [Home](https://rent.dawidolko.pl/): apartment listings, filters and projects
+
+## Author
+
+- [Dawid Olko](https://dawidolko.pl): Fullstack / AI Developer, author of this project

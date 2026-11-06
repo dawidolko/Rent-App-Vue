@@ -1,7 +1,7 @@
 <template>
   <section class="filter-section">
     <div class="container compact">
-      <h3>Select an Apartment</h3>
+      <h2 class="heading-3">Select an Apartment</h2>
       <div class="filters">
         <div class="filters__column filter-button">
           <div class="filters__item">
@@ -38,7 +38,6 @@
               :clearable="false"
               v-model="selected.projects"
               :options="projects"
-              outlined
               @focus="(e) => getFilters()"
               @keydown="(event) => nameKeydown(event)"
             />
@@ -49,7 +48,6 @@
               :clearable="false"
               v-model="selected.finish"
               :options="finish"
-              outlined
               @keydown="(event) => nameKeydown(event)"
             />
           </div>
@@ -100,6 +98,7 @@
             <Slider
               v-model="sliderValue.floor"
               class="slider-blue"
+              :aria="{ 'aria-label': 'Floor' }"
               :min="1"
               :max="16"
             />
@@ -111,6 +110,7 @@
             <Slider
               v-model="sliderValue.area"
               class="slider-blue"
+              :aria="{ 'aria-label': 'Area in square metres' }"
               :min="24"
               :max="160"
             />
@@ -121,7 +121,6 @@
               :clearable="false"
               v-model="selected.deadline"
               :options="deadline"
-              outlined
               @keydown="(event) => nameKeydown(event)"
             />
           </div>
@@ -132,6 +131,7 @@
             <Slider
               v-model="sliderValue.price"
               class="slider-blue"
+              :aria="{ 'aria-label': 'Price in million dollars' }"
               :step="-1"
               :min="4.1"
               :max="12.4"
@@ -378,8 +378,7 @@ export default {
 }
 
 .additional__filter {
-  pointer-events: none;
-  opacity: 0.25;
+  visibility: hidden;
 }
 .additional__clear {
   margin-left: 80px;
@@ -667,8 +666,7 @@ export default {
     display: inherit;
   }
   .additional__filter {
-    pointer-events: inherit;
-    opacity: inherit;
+    visibility: visible;
   }
   .additional__filter:not(.extended-change)::after {
     content: url(./icons/plus.svg);

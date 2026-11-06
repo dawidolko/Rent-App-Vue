@@ -72,7 +72,7 @@ defineProps({
         </nav>
         <div class="side-menu__content__column__container">
           <div class="side-menu__content__column" style="grid: &quot;B&quot;">
-            <h5>Purchase</h5>
+            <h2 class="heading-5">Purchase</h2>
             <a href="#">Trade-in</a>
             <a href="#">Installment</a>
             <a href="#">100% Payment</a>
@@ -84,7 +84,7 @@ defineProps({
             <a href="#">FAQ</a>
           </div>
           <div class="side-menu__content__column" style="grid: &quot;D&quot;">
-            <h5>Spaces</h5>
+            <h2 class="heading-5">Spaces</h2>
             <a href="#">Parking Spaces</a>
             <a href="#">Storage Rooms</a>
             <a href="#">Commercial Spaces</a>
@@ -93,7 +93,7 @@ defineProps({
         </div>
         <div class="side-menu__content__column__container">
           <div class="side-menu__content__column" style="grid: &quot;C&quot;">
-            <h5>For Residents</h5>
+            <h2 class="heading-5">For Residents</h2>
             <a href="#">Key Handover</a>
             <a href="#">Refinancing</a>
             <a href="#">Rights Reassignment</a>
@@ -102,7 +102,7 @@ defineProps({
             <a href="#">Apartment Rentals</a>
           </div>
           <div class="side-menu__content__column" style="grid: &quot;E&quot;">
-            <h5>Other</h5>
+            <h2 class="heading-5">Other</h2>
             <a href="#">Promotions</a>
             <a href="#">News</a>
             <a href="#">Construction Progress</a>
@@ -341,7 +341,7 @@ nav.side-menu__content__column > a {
   font-weight: 500;
 }
 
-.side-menu__content__column > h5 {
+.side-menu__content__column > h2 {
   font-weight: 500;
   margin: 12px 0;
 }

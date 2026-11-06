@@ -22,6 +22,7 @@ defineProps({
       </p>
       <button
         class="flat__header__projects__button flat__header__projects__button--outlined"
+        aria-label="Add to favourites"
       ></button>
     </div>
     <div class="flat__image">
@@ -51,7 +52,7 @@ defineProps({
       </div>
       <hr />
       <div class="flat__content__footer">
-        <h5 class="flat__content__footer__title">18 496 657 $</h5>
+        <p class="flat__content__footer__title heading-5">18 496 657 $</p>
         <span class="flat__content__footer__description"
           >Mortgage from 122 559 $/month</span
         >

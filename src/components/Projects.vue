@@ -1,7 +1,7 @@
 <template>
   <section class="projects">
     <div class="container compact">
-      <h3>Our Projects</h3>
+      <h2 class="heading-3">Our Projects</h2>
       <div class="tabs">
         <div class="checkboxes">
           <input type="radio" id="tabs-all" value="all" v-model="tab" />

@@ -6,23 +6,18 @@ on:
   pull_request:
     branches: [main, master]
 
-  # Pozwala na ręczne uruchomienie workflow z zakładki Actions
   workflow_dispatch:
 
-# Ustaw uprawnienia GITHUB_TOKEN do pozwolenia na deployment do GitHub Pages
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Pozwól na tylko jeden równoczesny deployment, pomijając kolejne uruchomienia w kolejce między uruchomieniem w toku a najnowszym dodanym do kolejki.
-# Jednak NIE anuluj uruchomienia w toku, ponieważ chcemy pozwolić na ukończenie tych deploymentów produkcyjnych.
 concurrency:
   group: "pages"
   cancel-in-progress: false
 
 jobs:
-  # Job budowania
   build:
     runs-on: ubuntu-latest
     steps:
@@ -49,7 +44,6 @@ jobs:
         with:
           path: ./dist
 
-  # Job deploymentu
   deploy:
     environment:
       name: github-pages

@@ -3,7 +3,7 @@
     <div class="container">
       <div class="content">
         <div class="content__description compact">
-          <h3 class="content__description__title">About the Group</h3>
+          <h2 class="content__description__title heading-3">About the Group</h2>
           <div class="content__description__container">
             <p class="content__description__container__text">
               Development of residential and commercial real estate with a
@@ -31,6 +31,7 @@
               alt="Dawid Olko"
               width="280"
               height="384"
+              loading="lazy"
             />
           </div>
           <div
@@ -41,6 +42,7 @@
               alt="Dawid Olko"
               width="432"
               height="638"
+              loading="lazy"
             />
           </div>
           <div class="video-container">
@@ -59,6 +61,7 @@
               alt="Dawid Olko"
               width="560"
               height="386"
+              loading="lazy"
             />
           </div>
         </div>
@@ -81,7 +84,7 @@
 
   padding: 112px 0 136px;
 
-  color: #768160;
+  color: #5a6348;
 
   overflow: hidden;
 }
@@ -147,6 +150,7 @@
   padding-bottom: 100%;
 }
 .content__gallery__image > img {
+  object-fit: cover;
   border-radius: 24px;
   position: absolute;
   top: 0;

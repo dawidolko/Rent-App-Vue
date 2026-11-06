@@ -34,11 +34,11 @@ defineProps({
 <template>
   <div class="card">
     <div class="card__image">
-      <img :src="image" alt="Project image" style="width: 100%" />
+      <img :src="image" alt="Project image" width="1280" height="731" loading="lazy" style="width: 100%; height: auto" />
     </div>
     <div class="card__content">
       <div>
-        <h5>{{ title }}</h5>
+        <h3 class="heading-5">{{ title }}</h3>
         <div class="card__content__description">
           <i
             class="card__content__description__circle"
@@ -52,6 +52,8 @@ defineProps({
             class="card__content__description__image"
             src="../icons/car.svg"
             alt=""
+            width="16"
+            height="16"
           />
           <p class="card__content__description__time subtitle">
             {{ time }} min

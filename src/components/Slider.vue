@@ -25,7 +25,7 @@
       <img
         class="slider__content__title"
         src="../assets/title.webp"
-        alt="Русич Котельники"
+        alt="Rent us flat"
         width="380"
         height="68"
       />
@@ -193,6 +193,7 @@ export default {
 }
 
 .slider__content__title {
+  object-fit: contain;
   margin-left: 64px;
 }
 

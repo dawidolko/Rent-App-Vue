@@ -10,14 +10,14 @@
       <a href="#">Apartments</a>
     </div>
     <div class="header__menu">
-      <a href="tel:+48 696 501 890" class="header__menu__phone"
+      <a href="tel:+48696501890" class="header__menu__phone"
         >+48 696 501 890</a
       >
       <button class="header__menu__button header__menu__button--outlined" aria-label="Favourites">
-        <img src="./icons/like.svg" alt="Like" />
+        <img src="./icons/like.svg" alt="" width="24" height="24" />
       </button>
       <button class="header__menu__button" aria-label="Open menu" @click="openMenu()">
-        <img src="./icons/menu.svg" alt="Menu" />
+        <img src="./icons/menu.svg" alt="" width="24" height="24" />
       </button>
     </div>
   </header>
