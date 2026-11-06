@@ -40,6 +40,14 @@ It is a static Vue 3 build published to GitHub Pages — no backend, the flats c
 
 ---
 
+## 🎬 Demo
+
+<p align="center">
+  <img src="docs/readme/demo.webp" alt="Rent App: a short scroll through the live site" width="80%">
+</p>
+
+---
+
 ## 🛠️ Technology Stack
 
 | Technology          | Version | Role                                                     |
