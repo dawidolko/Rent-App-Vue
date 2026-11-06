@@ -1,3 +1,7 @@
+<p align="center">
+  <a href="https://rent.dawidolko.pl/"><img src="docs/readme/banner.webp" alt="Rent App: frontend. Filters that show their work" width="100%"></a>
+</p>
+
 # Rent App
 
 > 🏢 **Filters that show their work** — a Vue 3 flat-finder where every active criterion stays visible as a removable chip
@@ -12,7 +16,7 @@ It is a static Vue 3 build published to GitHub Pages — no backend, the flats c
 ![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-deployed-222222?logo=githubpages&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
-**Live:** [rent.dawidolko.pl](https://rent.dawidolko.pl)
+**[Live site](https://rent.dawidolko.pl/)** · [Screenshots](#️-screenshots) · [Getting started](#-getting-started)
 
 ---
 
@@ -24,6 +28,15 @@ It is a static Vue 3 build published to GitHub Pages — no backend, the flats c
 - **Flats as cards** — `FlatCard` renders one result, so the list, the comparison and any future view share the same presentation.
 - **An icon set as files, not a font** — SVGs in `src/components/icons`, imported where needed, so nothing loads a whole icon font for six glyphs.
 - **Responsive layout** — the filter panel becomes a sheet on a phone; the flat list drops from a grid to a single column.
+
+---
+
+## 🖼️ Screenshots
+
+<p align="center">
+  <img src="docs/readme/desktop.webp" alt="Rent App on a desktop screen" width="74%">
+  <img src="docs/readme/mobile.webp" alt="Rent App on a phone" width="22%">
+</p>
 
 ---
 
@@ -72,6 +85,12 @@ npm run deploy    # build and publish to GitHub Pages
 
 ---
 
+## ♿ Accessibility
+
+An accessibility panel in the corner of every page changes text size, contrast, font and motion, and remembers the choice on the device. It sits on top of the markup and does not replace accessible markup.
+
+---
+
 ## 📁 Project Structure
 
 ```
@@ -97,3 +116,11 @@ Rent-App-Vue/
 ## 📄 License
 
 MIT © [Dawid Olko](https://dawidolko.pl)
+
+---
+
+## 👨‍💻 Author
+
+**Dawid Olko** · Fullstack / AI Developer
+
+[Portfolio](https://olkodawid.dawidolko.pl) · [CV](https://cv.dawidolko.pl) · [LinkedIn](https://www.linkedin.com/in/dawidolko/) · [GitHub](https://github.com/dawidolko)
