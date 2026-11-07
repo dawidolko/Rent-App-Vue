@@ -36,9 +36,9 @@ defineProps({
               height="32"
             />
             <a
-              href="mailto:dawid_olko@outlook.com"
+              href="mailto:contact@dawidolko.pl"
               class="side-menu__header__menu__phone"
-              >dawid_olko@outlook.com</a
+              >contact@dawidolko.pl</a
             >
           </div>
         </div>
@@ -135,9 +135,9 @@ defineProps({
               height="32"
             />
             <a
-              href="mailto:dawid_olko@outlook.com"
+              href="mailto:contact@dawidolko.pl"
               class="side-menu__header__menu__phone"
-              >dawid_olko@outlook.com</a
+              >contact@dawidolko.pl</a
             >
           </div>
           <hr />
